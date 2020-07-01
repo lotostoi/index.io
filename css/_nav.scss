@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    width: 100%;
+
+    &__cont {
+        justify-content: space-between;
+        max-width: 1170px;
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__ul {
+        display: flex;
+        flex-wrap: wrap;
+        & > li  {
+            list-style-type: none;
+        }
+        & > li > a {
+            text-transform: uppercase;
+
+            font-weight: 600;
+            margin-right: 40px;
+            text-decoration: none;
+            color: $base;
+            &:hover {
+                cursor: pointer;
+                color: $pinc;
+            }
+            &:active {
+                cursor: pointer;
+                color: $pincActive;
+            }
+        }
+        & > li:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

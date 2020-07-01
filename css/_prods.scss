@@ -1,0 +1,77 @@
+.category {
+    margin-top: 96px;
+    display: flex;
+    width: 100%;
+    &__cont {
+        justify-content: space-between;
+        max-width: 1170px;
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > .left,
+        & > .right {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            & > a {
+                position: relative;
+                text-decoration: none;
+                margin-bottom: 20px;
+                &:before {
+                    content: "";
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                    height: calc(100% - 3px);
+                    transition: background-color 0.5s;
+                    box-sizing: content-box;
+                }
+                &:hover:before {
+                    content: "";
+                    display: flex;
+                    position: absolute;
+                    background-color: rgba(128, 128, 128, 0.692);
+                }
+                &:hover div {
+                    background-color: rgba(187, 231, 129, 0.555);
+                }
+                & > img.littel {
+                    width: 560px;
+                    height: 261px;
+                }
+                & > img.big {
+                    width: 560px;
+                    height: 542px;
+                }
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 16px 20px;
+                    background-color: white;
+                    position: absolute;
+                    transition: background-color 0.5s;
+                    top: 26px;
+                    & > span:first-of-type {
+                        display: flex;
+                        color: #222222;
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    & > span:last-of-type {
+                        display: flex;
+                        color: $pinc;
+                        font-weight: 600;
+                        font-size: 30px;
+                        letter-spacing: 0.75px;
+                    }
+                }
+            }
+        }
+    }
+}
