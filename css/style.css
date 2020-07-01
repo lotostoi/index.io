@@ -1024,4 +1024,171 @@
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
+
+.footer {
+  padding: 110px 15px 90px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #ececec;
+}
+
+.footer__cont {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1170px;
+  width: 100%;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__top > .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__top > .first > a {
+  margin-bottom: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.footer__top > .first > a:hover p,
+.footer__top > .first > a:hover img {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.footer__top > .first > a:active p,
+.footer__top > .first > a:active img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.footer__top > .first > a > p {
+  font-size: 27px;
+  font-weight: 300;
+  margin-left: 15px;
+  color: #222222;
+}
+
+.footer__top > .first > a > p > span {
+  color: #f16d7f;
+  font-weight: 600;
+}
+
+.footer__top > .first > p:first-of-type {
+  width: 427px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  margin-bottom: 36px;
+}
+
+.footer__top > .first > p:last-of-type {
+  width: 427px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  margin-bottom: 36px;
+}
+
+.footer__top > .second,
+.footer__top > .third,
+.footer__top > .fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__top > .second > h4,
+.footer__top > .third > h4,
+.footer__top > .fourth > h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  margin-bottom: 45px;
+}
+
+.footer__top > .second > a,
+.footer__top > .third > a,
+.footer__top > .fourth > a {
+  text-decoration: none;
+  color: #898989;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 42px;
+  margin-bottom: 5px;
+}
+
+.footer__top > .second > a:hover,
+.footer__top > .third > a:hover,
+.footer__top > .fourth > a:hover {
+  cursor: pointer;
+  color: #f16d7f;
+}
+
+.footer__top > .second > a:active,
+.footer__top > .third > a:active,
+.footer__top > .fourth > a:active {
+  cursor: pointer;
+  color: #9e2d3e;
+}
 /*# sourceMappingURL=style.css.map */
