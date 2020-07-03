@@ -19,6 +19,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
         & > .first {
             display: flex;
             flex-direction: column;
@@ -52,7 +53,8 @@
                 }
             }
             & > p:first-of-type {
-                width: 427px;
+                width: 100%;
+                max-width: 427px;
                 color: #898989;
                 font-size: 14px;
                 font-weight: 300;
@@ -61,7 +63,8 @@
                 margin-bottom: 36px;
             }
             & > p:last-of-type {
-                width: 427px;
+                width: 100%;
+                max-width: 427px;
                 color: #898989;
                 font-size: 14px;
                 font-weight: 300;

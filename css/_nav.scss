@@ -14,6 +14,14 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    &__menu {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 5px;
+    }
     &__ul {
         display: flex;
         flex-wrap: wrap;
@@ -40,4 +48,76 @@
             margin-right: 0;
         }
     }
+}
+
+
+@include mq(745,max) {
+    .nav {
+        display: flex;
+        width: 100%;
+    
+        &__cont {
+            justify-content: space-between;
+            max-width: 1170px;
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+        &__menu {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 5px;
+        }
+        &__ul {
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            background-color: rgb(170, 169, 169);
+            top: 50px;
+            right: 0;
+            transform: scaleY(0);
+            transition: transform .5s;
+            & > li  {
+                margin: 5px;
+                list-style-type: none;
+            }
+            & > li > a {
+                text-transform: uppercase;
+    
+                font-weight: 600;
+                margin-right: 0px;
+               
+                text-decoration: none;
+                color: $base;
+                &:hover {
+                    cursor: pointer;
+                    color: $pinc;
+                }
+                &:active {
+                    cursor: pointer;
+                    color: $pincActive;
+                }
+            }
+            & > li:last-of-type {
+                margin-right: 0;
+            }
+        }
+        &__ul-active {
+            transform: scaleY(1);
+        }
+    }
+
+
 }

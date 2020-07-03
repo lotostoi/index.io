@@ -12,10 +12,12 @@
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
+        box-sizing: border-box;
         & > .left {
             display: flex;
             width: calc(767 * 100% / 1170);
             height: 529px;
+            min-width: 320px;
             background: url("./../img/Layer_38.png") no-repeat;
             background-position: center;
             padding: 146px 39px;
@@ -44,6 +46,7 @@
             display: flex;
             flex-direction: column;
             width: 373px;
+            min-width: 320px;
             height: 529px;
             background-color: #222224;
             justify-content: space-evenly;
