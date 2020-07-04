@@ -4,6 +4,7 @@
     width: 100%;
     background: url("./../img/fone3.jpg") no-repeat;
     background-position: center;
+    background-size: cover;
     //  height: 438px;
     box-sizing: border-box;
     // display: none;
@@ -33,7 +34,6 @@
                     color: #222224;
                     font-size: 16px;
                     line-height: 26px;
-                    /* Text style for "“, Vestibu" */
                     letter-spacing: 0.4px;
                     margin-bottom: 19px;
                     font-style: italic;
@@ -122,8 +122,7 @@
                     color: #ffffff;
                     font-size: 14px;
                     font-weight: 400;
-                    line-height: 54px;
-                    /* Text style for "Subscribe" */
+                  
                     letter-spacing: 0.35px;
                     transition: background-color 0.5s;
                     &:hover {
@@ -140,7 +139,7 @@
 
 @include mq(890, max) {
     .subscribe {
-        margin-top: 97px;
+        margin-top: 0;
         display: flex;
         width: 100%;
         background: url("./../img/fone3.jpg") no-repeat;
@@ -181,7 +180,6 @@
                         color: #222224;
                         font-size: 16px;
                         line-height: 26px;
-                        /* Text style for "“, Vestibu" */
                         letter-spacing: 0.4px;
                         margin-bottom: 19px;
                         font-style: italic;

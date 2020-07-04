@@ -3,7 +3,6 @@
     width: 100%;
 
     &__cont {
-        justify-content: space-between;
         max-width: 1170px;
         width: 100%;
         min-height: 50px;
@@ -13,6 +12,7 @@
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
+        box-sizing: border-box;
     }
     &__menu {
         display: none;
@@ -25,19 +25,44 @@
     &__ul {
         display: flex;
         flex-wrap: wrap;
-        & > li  {
+        & > li {
             list-style-type: none;
         }
-        & > li > a {
-            text-transform: uppercase;
 
+        & > li > a {
+            padding: 5px;
+            display: flex;
+            text-transform: uppercase;
+          
             font-weight: 600;
             margin-right: 40px;
             text-decoration: none;
             color: $base;
+            position: relative;
+            box-sizing: border-box;
             &:hover {
                 cursor: pointer;
                 color: $pinc;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                border-top: 2px solid transparent;
+            }
+            &:hover:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                border-top: 2px solid $pinc;
             }
             &:active {
                 cursor: pointer;
@@ -50,12 +75,11 @@
     }
 }
 
-
-@include mq(745,max) {
+@include mq(745, max) {
     .nav {
         display: flex;
         width: 100%;
-    
+
         &__cont {
             justify-content: space-between;
             max-width: 1170px;
@@ -89,23 +113,23 @@
             right: 0;
             transform: scaleY(0);
             transform-origin: 0 0;
-            transition: transform .5s;
-            & > li  {
+            transition: transform 0.5s;
+            & > li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                margin: 5px 0;
+               // margin: 5px 0;
                 list-style-type: none;
                 padding: 5px 0;
                 border-bottom: 1px solid rgb(226, 225, 225);
             }
             & > li > a {
                 text-transform: uppercase;
-    
+
                 font-weight: 600;
                 margin-right: 0px;
-               
+
                 text-decoration: none;
                 color: $base;
                 &:hover {
@@ -114,8 +138,18 @@
                 }
                 &:active {
                     cursor: pointer;
-                    color:  $base;
+                    color: $base;
                 }
+            }
+            &:hover:after {
+                content: "";
+                display: none;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                border-top: 2px solid $pinc;
             }
             & > li:last-of-type {
                 margin-right: 0;
@@ -126,6 +160,4 @@
             transform: scaleY(1);
         }
     }
-
-
 }
