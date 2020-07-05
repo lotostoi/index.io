@@ -19,10 +19,9 @@
         flex-direction: column;
         width: 245px;
     }
-    &__category,
-    &__brand,
-    &__designer {
-        cursor: pointer;
+
+    &__category {
+         cursor: pointer;
         display: flex;
         width: 100%;
         color: #ef5b70;
@@ -58,6 +57,81 @@
             top: 35%;
         }
     }
+    &__brand {
+         cursor: pointer;
+        display: flex;
+        width: 100%;
+        color: #ef5b70;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 14px;
+        box-sizing: border-box;
+        border-left: 4px solid $pinc;
+        border-bottom: 1px solid #ebebeb;
+        position: relative;
+        margin-bottom: 18px;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 6px solid $pinc;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            right: 15px;
+            top: 50%;
+        }
+        &-active:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid $pinc;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            right: 15px;
+            top: 35%;
+        }
+    }
+    &__designer {
+         cursor: pointer;
+        display: flex;
+        width: 100%;
+        color: #ef5b70;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 14px;
+        box-sizing: border-box;
+        border-left: 4px solid $pinc;
+        border-bottom: 1px solid #ebebeb;
+        position: relative;
+        margin-bottom: 18px;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 6px solid $pinc;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            right: 15px;
+            top: 50%;
+        }
+        &-active:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid $pinc;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            right: 15px;
+            top: 35%;
+        }
+    }
+
     &__contCategory,
     &__contBrand,
     &__contDesigner {
@@ -72,8 +146,12 @@
             margin-left: 22px;
         }
     }
-    &__contCategory-active,
-    &__contBranda-ative,
+    &__contCategory-active {
+        display: flex;
+    }
+    &__contBrand-active {
+        display: flex;
+    }
     &__contDesigner-active {
         display: flex;
     }
