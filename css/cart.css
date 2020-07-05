@@ -354,6 +354,7 @@ body {
 
 .nav__ul > li {
   list-style-type: none;
+  line-height: 39px;
 }
 
 .nav__ul > li > a {
