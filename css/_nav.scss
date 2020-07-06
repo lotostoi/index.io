@@ -106,6 +106,7 @@
             display: flex;
             flex-wrap: wrap;
             position: absolute;
+            z-index: 100;
             flex-direction: column;
             width: 100%;
             align-items: center;
@@ -150,7 +151,7 @@
                 left: 0;
                 width: 100%;
                 height: 0;
-                border-top: 2px solid $pinc;
+                border-top: 2px solid transparent;
             }
             & > li:last-of-type {
                 margin-right: 0;

@@ -3,4 +3,6 @@
 .icon-pinterest:before { content: '\e801'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
-.icon-gplus-1:before { content: '\f0d5'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-angle-right:before { content: '\f105'; } /* '' */
