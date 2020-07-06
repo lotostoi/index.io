@@ -1653,7 +1653,6 @@
   font-size: 14px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  /* Text style for "FOR OUR NE" */
   letter-spacing: 0.35px;
   text-align: center;
 }
@@ -2443,6 +2442,7 @@
 }
 
 .footer__cont > div {
+  margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
