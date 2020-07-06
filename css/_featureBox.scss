@@ -67,7 +67,8 @@
 
             & > div {
                 display: flex;
-                width: 310px;
+                width: 100%;
+                max-width: 300px;
                 flex-direction: column;
                 align-items: center;
                 & > div {
@@ -91,6 +92,7 @@
                     line-height: 23.95px;
                     letter-spacing: 0.35px;
                     margin-bottom: 30px;
+                    text-align: center;
                 }
             }
         }
