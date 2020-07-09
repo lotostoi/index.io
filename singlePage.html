@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontello/fontello-73ee9836/css/fontello.css">
+    <link rel="stylesheet" href="./css/singlePage.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__cont">
+                <a class="header__logo" href="index.html">
+                    <img src="./img/logo.png" alt="logo">
+                    <p>BRSN<span>D</span>
+                    </p>
+                </a>
+                <div class="header__search">
+                    <div class="browse">
+                        <span>Browse</span>
+                        <div class="triangle"></div>
+                    </div>
+                    <input type="text" class="fieldeSearch" placeholder="Search for item">
+                    <button type="submit">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50px"
+                            height="50px">
+                            <path
+                                d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="header__cart">
+                    <svg height="0.403in">
+                        <path
+                            d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z" />
+                    </svg>
+                </div>
+                <div class="header__myAccount">
+                    <span>My Account</span>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+
+        </header>
+        <nav class="nav">
+            <div class="nav__cont">
+                <span class="nav__menu">Menu</span>
+                <ul class="nav__ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Man</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Accoseriese</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Hot deals</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="arrivals">
+            <div class="arrivals__cont">
+                <h3>New Arrivals</h3>
+                <nav>
+                    <a href="#"> Home /</a>
+                    <a href="#"> Men / </a>
+                    <span> New Arrivals</span>
+                </nav>
+            </div>
+        </section>
+        <div class="slider" id="app">
+            <button class="left" @click="left"><i class="icon-left-open"></i></button>
+            <button class="right" @click="right"><i class="icon-right-open"></i></button>
+            <div class="slider__cont">
+                <div class="img " :class="getCalss(i)" v-for="slide,i in sliders"><img src="./img/slider1.jpg"
+                        alt="content"></div>
+            </div>
+        </div>
+        <div class="window">
+            <div class="window__cont">
+                <p class="window__women">WOMEN COLLECTION</p>
+                <div class="window__underLine"></div>
+                <h3>Moschino Cheap And Chic</h3>
+                <p class="window__text">Compellingly actualize fully researched processes before proactive outsourcing.
+                    Progressively syndicate collaborative architectures before cutting-edge services. Completely
+                    visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="window__add">
+                    <p>MATERIAL: <span>COTTON</span></p>
+                    <p>DESIGNER: <span>BINBURHAN</span></p>
+                </div>
+                <span class="window__price">$561</span>
+                <div class="window__line"></div>
+                <div class="window__bottomBlock">
+                    <div class="window__chooseColor">
+                        <h4>CHOOSE COLOR</h4>
+                        <div class="selectColor">
+                            <div class="color"></div>
+                            <span>Red</span>
+                            <i class="icon-down-open"></i>
+                            <ul>
+                                <li>
+                                    <div class="color"></div>
+                                    <span>Green</span>
+                                </li>
+                                <li>
+                                    <div class="color"></div>
+                                    <span>Pink</span>
+                                </li>
+                                <li>
+                                    <div class="color"></div>
+                                    <span>Blue</span>
+                                </li>
+                                <li>
+                                    <div class="color"></div>
+                                    <span>Black</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="window__chooseSize">
+                        <h4>CHOOSE Size</h4>
+                        <div class="selectSize">
+                            <span>XXL</span>
+                            <i class="icon-down-open"></i>
+                            <ul>
+                                <li>
+                                    <span>XL</span>
+                                </li>
+                                <li>
+                                    <span>L</span>
+                                </li>
+                                <li>
+                                    <span>XL</span>
+                                </li>
+                                <li>
+                                    <span>S</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="window__quantity">
+                        <h4>Quantity</h4>
+                        <input type="text" value="2">
+                    </div>
+                   
+                    <button>
+                        <img src="./img/cart_svg.svg" alt="icon">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section class="likeAlso">
+            <div class="likeAlso__cont">
+                <h3>You may like also</h3>
+                <div class="likeAlso__goods">
+                    <div class="likeAlso__good">
+                        <div><img src="./img/likeAlso1.jpg" alt="img"></div>
+                        <a href="#">ALEXA SWEATER</a><span>$52.00</span>
+                    </div>
+                    <div class="likeAlso__good">
+                        <div><img src="./img/likeAlso2.jpg" alt="img"></div>
+                        <a href="#">ALEXA SWEATER</a><span>$52.00</span>
+                    </div>
+                    <div class="likeAlso__good">
+                        <div><img src="./img/likeAlso3.png" alt="img"></div>
+                        <a href="#">ALEXA SWEATER</a><span>$52.00</span>
+                    </div>
+                    <div class="likeAlso__good">
+                        <div><img src="./img/likeAlso4.jpg" alt="img"></div>
+                        <a href="#">ALEXA SWEATER</a><span>$52.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe__cont">
+                <div class="left">
+                    <img src="./img/photo.png" width="83" height="83" alt="photo">
+                    <div>
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam condimentum mattis neque sed pretium”</p>
+                        <span>Bin Burhan</span>
+                        <span>Dhaka, Bd</span>
+                        <div class="right">
+                            <div data-id="1"></div>
+                            <div data-id="2"></div>
+                            <div data-id="3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h5>Subscribe</h5>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="add">
+            <div class="add__cont">
+                <div class="add__top">
+                    <div class="first">
+                        <a class="add__logo" href="index.html">
+                            <img src="./img/logo.png" alt="logo">
+                            <p>BRSN<span>D</span>
+                            </p>
+                        </a>
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.</p>
+                        <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                    </div>
+                    <div class="second">
+                        <h4>Company</h4>
+                        <a href="#"> Home </a>
+                        <a href="#"> Shop </a>
+                        <a href="#"> About </a>
+                        <a href="#"> How It Works </a>
+                        <a href="#"> Contact </a>
+                    </div>
+                    <div class="third">
+                        <h4>INFORMATION</h4>
+                        <a href="#"> Tearms & Condition </a>
+                        <a href="#"> Privacy Policy </a>
+                        <a href="#"> How to Buy </a>
+                        <a href="#"> How to Sell </a>
+                        <a href="#">Promotion</a>
+                    </div>
+                    <div class="fourth">
+                        <h4>SHOP CATEGORY</h4>
+                        <a href="#"> Men </a>
+                        <a href="#"> Women </a>
+                        <a href="#"> Child </a>
+                        <a href="#"> Apparel </a>
+                        <a href="#">Brows All</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="footer__cont">
+                <p>&copy; 2017 Brand All Rights Reserved.</p>
+                <div>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                    <a href="#"><i class="icon-pinterest"></i></a>
+                    <a href="#"><i class="icon-gplus"></i></a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
