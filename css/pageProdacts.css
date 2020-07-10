@@ -412,6 +412,8 @@ body {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header__logo {
@@ -710,6 +712,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   padding: 5px;
+  cursor: pointer;
 }
 
 .nav__ul {
@@ -723,6 +726,7 @@ body {
 .nav__ul > li {
   list-style-type: none;
   line-height: 39px;
+  margin-right: 40px;
 }
 
 .nav__ul > li > a {
@@ -732,7 +736,6 @@ body {
   display: flex;
   text-transform: uppercase;
   font-weight: 600;
-  margin-right: 40px;
   text-decoration: none;
   color: #222222;
   position: relative;
@@ -824,7 +827,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: absolute;
-    z-index: 100;
+    z-index: 250;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -856,6 +859,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin-right: 0px;
     list-style-type: none;
     padding: 5px 0;
     border-bottom: 1px solid #e2e1e1;
@@ -863,7 +867,6 @@ body {
   .nav__ul > li > a {
     text-transform: uppercase;
     font-weight: 600;
-    margin-right: 0px;
     text-decoration: none;
     color: #222222;
   }
@@ -952,7 +955,6 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #636363;
-  font-weight: 300;
 }
 
 .arrivals__cont > nav > a:hover {
@@ -1018,7 +1020,6 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #636363;
-    font-weight: 300;
   }
   .arrivals__cont > nav > a:hover {
     color: #f16d7f;
@@ -1680,7 +1681,6 @@ body {
 }
 
 .products__pagAndBautton > .pag > button {
-  border-radius: 50%;
   color: #c4c4c4;
   font-size: 16px;
   font-weight: bold;
@@ -2421,6 +2421,7 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  padding: 10px;
   letter-spacing: 0.35px;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
@@ -2760,7 +2761,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #f16d7f;
-  font-family: Lato;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -2774,7 +2774,6 @@ body {
 .add__top > .fourth > a {
   text-decoration: none;
   color: #898989;
-  font-family: Lato;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
@@ -2924,7 +2923,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     color: #f16d7f;
-    font-family: Lato;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -2937,7 +2935,6 @@ body {
   .add__top > .fourth > a {
     text-decoration: none;
     color: #898989;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
@@ -3085,7 +3082,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     color: #f16d7f;
-    font-family: Lato;
     font-size: 15px;
     font-weight: 700;
     line-height: 26px;
@@ -3101,7 +3097,6 @@ body {
   .add__top > .fourth > a {
     text-decoration: none;
     color: #898989;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;

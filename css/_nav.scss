@@ -21,6 +21,7 @@
         text-transform: uppercase;
         font-weight: 500;
         padding: 5px;
+        cursor: pointer;
     }
     &__ul {
         display: flex;
@@ -28,6 +29,7 @@
         & > li {
             list-style-type: none;
             line-height: 39px;
+            margin-right: 40px;
         }
 
         & > li > a {
@@ -36,7 +38,7 @@
             text-transform: uppercase;
 
             font-weight: 600;
-            margin-right: 40px;
+ 
             text-decoration: none;
             color: $base;
             position: relative;
@@ -82,7 +84,7 @@
         width: 100%;
 
         &__cont {
-            justify-content: space-between;
+          
             max-width: 1170px;
             width: 100%;
             min-height: 50px;
@@ -106,7 +108,7 @@
             display: flex;
             flex-wrap: wrap;
             position: absolute;
-            z-index: 100;
+            z-index: 250;
             flex-direction: column;
             width: 100%;
             align-items: center;
@@ -121,7 +123,7 @@
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                // margin: 5px 0;
+                margin-right: 0;
                 list-style-type: none;
                 padding: 5px 0;
                 border-bottom: 1px solid rgb(226, 225, 225);
@@ -130,7 +132,7 @@
                 text-transform: uppercase;
 
                 font-weight: 600;
-                margin-right: 0px;
+               
 
                 text-decoration: none;
                 color: $base;
@@ -165,7 +167,7 @@
             }
 
             & > li:last-of-type {
-                margin-right: 0;
+             
                 margin: 0;
             }
         }
