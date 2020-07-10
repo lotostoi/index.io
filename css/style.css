@@ -415,9 +415,6 @@
     width: 100%;
   }
   .nav__cont {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-width: 1170px;
     width: 100%;
     min-height: 50px;
@@ -487,7 +484,7 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    margin-right: 0px;
+    margin-right: 0;
     list-style-type: none;
     padding: 5px 0;
     border-bottom: 1px solid #e2e1e1;
@@ -527,7 +524,6 @@
     border-top: 2px solid transparent;
   }
   .nav__ul > li:last-of-type {
-    margin-right: 0;
     margin: 0;
   }
   .nav__ul-active {
@@ -548,16 +544,12 @@
   height: 665px;
   background: url("./../img/baner.jpg") no-repeat;
   background-position: 60% 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   max-width: 1170px;
   width: 100%;
   min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 15px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -621,16 +613,12 @@
     height: 665px;
     background: url("./../img/baner.jpg") no-repeat;
     background-position: 59% 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-width: 1170px;
     width: 100%;
     min-height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 15px;
     margin: 0 auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1049,7 +1037,6 @@
   width: 123px;
   height: 39px;
   border: 1px solid #ffffff;
-  background-color: #ffffff;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1074,7 +1061,6 @@
 .goods__good .img > div > button > span {
   margin-left: 10px;
   color: #ffffff;
-  font-family: Lato;
   font-size: 13px;
   font-weight: 700;
 }
@@ -1090,7 +1076,6 @@
   display: -ms-flexbox;
   display: flex;
   color: #222222;
-  font-family: Lato;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1214,7 +1199,6 @@
     width: 123px;
     height: 39px;
     border: 1px solid #ffffff;
-    background-color: #ffffff;
     background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1236,7 +1220,6 @@
   .goods__good .img > div > button > span {
     margin-left: 10px;
     color: #ffffff;
-    font-family: Lato;
     font-size: 13px;
     font-weight: 700;
   }
@@ -1250,7 +1233,6 @@
     display: -ms-flexbox;
     display: flex;
     color: #222222;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1267,7 +1249,6 @@
     display: -ms-flexbox;
     display: flex;
     color: #222222;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1356,7 +1337,6 @@
 
 .feature__cont > .left > span:first-of-type {
   color: #ffffff;
-  font-family: Lato;
   font-size: 54px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1415,7 +1395,6 @@
 
 .feature__cont > .right > div > div > h5 {
   color: #fbfbfb;
-  font-family: Lato;
   font-size: 20px;
   font-weight: 700;
   /* Text style for "Free Deliv" */
@@ -1425,7 +1404,6 @@
 
 .feature__cont > .right > div > div > p {
   color: #fbfbfb;
-  font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1455,7 +1433,6 @@
   }
   .feature__cont > .left > span:first-of-type {
     color: #ffffff;
-    font-family: Lato;
     font-size: 54px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1511,7 +1488,6 @@
   }
   .feature__cont > .right > div > div > h5 {
     color: #fbfbfb;
-    font-family: Lato;
     font-size: 20px;
     font-weight: 700;
     /* Text style for "Free Deliv" */
@@ -1520,7 +1496,6 @@
   }
   .feature__cont > .right > div > div > p {
     color: #fbfbfb;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -1654,7 +1629,6 @@
 .subscribe__cont > .right > p {
   margin: 0px 0 35px;
   font-size: 14px;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
   letter-spacing: 0.35px;
   text-align: center;
@@ -1844,7 +1818,6 @@
   .subscribe__cont > .right > p {
     margin: 0px 0 35px;
     font-size: 14px;
-    letter-spacing: 0.6px;
     text-transform: uppercase;
     /* Text style for "FOR OUR NE" */
     letter-spacing: 0.35px;
@@ -2419,7 +2392,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24 15px;
+  padding: 24px 15px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

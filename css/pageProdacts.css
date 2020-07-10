@@ -787,9 +787,6 @@ body {
     width: 100%;
   }
   .nav__cont {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-width: 1170px;
     width: 100%;
     min-height: 50px;
@@ -859,7 +856,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    margin-right: 0px;
+    margin-right: 0;
     list-style-type: none;
     padding: 5px 0;
     border-bottom: 1px solid #e2e1e1;
@@ -899,7 +896,6 @@ body {
     border-top: 2px solid transparent;
   }
   .nav__ul > li:last-of-type {
-    margin-right: 0;
     margin: 0;
   }
   .nav__ul-active {
@@ -955,6 +951,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #636363;
+  font-weight: 300;
 }
 
 .arrivals__cont > nav > a:hover {
@@ -1020,6 +1017,7 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #636363;
+    font-weight: 300;
   }
   .arrivals__cont > nav > a:hover {
     color: #f16d7f;
@@ -1361,7 +1359,7 @@ body {
           align-items: center;
   width: 52px;
   color: #6f6e6e;
-  font-family: "Open Sans";
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1375,7 +1373,7 @@ body {
   height: 13px;
   margin-bottom: 2px;
   margin-right: 5px;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .products__price {
@@ -2371,7 +2369,6 @@ body {
 .subscribe__cont > .right > p {
   margin: 0px 0 35px;
   font-size: 14px;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
   letter-spacing: 0.35px;
   text-align: center;
@@ -2561,7 +2558,6 @@ body {
   .subscribe__cont > .right > p {
     margin: 0px 0 35px;
     font-size: 14px;
-    letter-spacing: 0.6px;
     text-transform: uppercase;
     /* Text style for "FOR OUR NE" */
     letter-spacing: 0.35px;
@@ -3136,7 +3132,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24 15px;
+  padding: 24px 15px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
